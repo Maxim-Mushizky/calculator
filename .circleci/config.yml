@@ -18,6 +18,8 @@ jobs:
             . venv/bin/activate
             pip install -r requirements_dev.txt
       # Step 3: run linter and tests
+      - store_test_results:
+          path: tests
       - run:
           name: run tests
           command: |
