@@ -1,4 +1,4 @@
-from src import calc
+from src import calculator
 import pytest
 import random
 import numpy as np
@@ -9,7 +9,7 @@ import numpy as np
                          ids=[f"Add {i}" for i in range(20)])
 def test_add(x, y):
     assert x + y == pytest.approx(
-        calc.add(x, y)), f"Addition module is not working properly for x = {x} and y = {y}"
+        calculator.add(x, y)), f"Addition module is not working properly for x = {x} and y = {y}"
 
 
 @pytest.mark.single
@@ -17,7 +17,7 @@ def test_add(x, y):
                          ids=[f"Subtract {i}" for i in range(20)])
 def test_subtract(x, y):
     assert x - y == pytest.approx(
-        calc.subtract(x, y)), "Subtract module is not working properly for x = {x} and y = {y}"
+        calculator.subtract(x, y)), "Subtract module is not working properly for x = {x} and y = {y}"
 
 
 @pytest.mark.vector
@@ -26,4 +26,4 @@ def test_subtract(x, y):
 
 ])
 def test_vec_sum(v):
-    assert np.sum(v) == calc.vec_sum(v), "The sum module isn't working properly"
+    assert np.sum(v) == calculator.vec_sum(v), "The sum module isn't working properly"
