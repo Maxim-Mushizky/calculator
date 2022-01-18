@@ -1,4 +1,4 @@
-from src import calculator
+from vec_calculator import calculator
 import pytest
 import random
 import numpy as np

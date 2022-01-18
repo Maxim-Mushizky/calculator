@@ -19,6 +19,9 @@ pytest==6.2.5
 pytest-cov==3.0.0
 toml==0.10.2
 tomli==2.0.0
+tox==3.24.5
 typed-ast==1.5.1
 typing-extensions==4.0.1
 zipp==3.7.0
+
+
